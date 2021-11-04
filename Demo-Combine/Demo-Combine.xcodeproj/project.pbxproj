@@ -17,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		CE40A741272FBFCF005D54EC /* Subscriber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subscriber.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CE86915B2734519A00DAFA5A /* FilteringOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FilteringOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CEC25E94272BD85600CC81DC /* Demo-Combine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-Combine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC25E97272BD85600CC81DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC25E99272BD85600CC81DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 				CE40A741272FBFCF005D54EC /* Subscriber.playground */,
 				CEC25EAD272BDCB500CC81DC /* SimpleCombine.playground */,
 				CEC25EAE272BE3DF00CC81DC /* TransformingOperators.playground */,
+				CE86915B2734519A00DAFA5A /* FilteringOperators.playground */,
 			);
 			path = HelloCombine;
 			sourceTree = "<group>";
