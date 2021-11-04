@@ -26,7 +26,7 @@
 		CEC25EA3272BD85A00CC81DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC25EA5272BD85A00CC81DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEC25EAD272BDCB500CC81DC /* SimpleCombine.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SimpleCombine.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		CEC25EAE272BE3DF00CC81DC /* Operators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Operators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CEC25EAE272BE3DF00CC81DC /* TransformingOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TransformingOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CEC25EAF272BE4CD00CC81DC /* Publisher.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Publisher.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
@@ -75,10 +75,10 @@
 		CEC25EAB272BD97A00CC81DC /* HelloCombine */ = {
 			isa = PBXGroup;
 			children = (
-				CEC25EAD272BDCB500CC81DC /* SimpleCombine.playground */,
 				CEC25EAF272BE4CD00CC81DC /* Publisher.playground */,
-				CEC25EAE272BE3DF00CC81DC /* Operators.playground */,
 				CE40A741272FBFCF005D54EC /* Subscriber.playground */,
+				CEC25EAD272BDCB500CC81DC /* SimpleCombine.playground */,
+				CEC25EAE272BE3DF00CC81DC /* TransformingOperators.playground */,
 			);
 			path = HelloCombine;
 			sourceTree = "<group>";
