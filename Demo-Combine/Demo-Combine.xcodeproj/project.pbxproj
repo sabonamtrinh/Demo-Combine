@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE40A741272FBFCF005D54EC /* Subscriber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Subscriber.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CEC25E94272BD85600CC81DC /* Demo-Combine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-Combine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC25E97272BD85600CC81DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC25E99272BD85600CC81DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 				CEC25EAD272BDCB500CC81DC /* SimpleCombine.playground */,
 				CEC25EAF272BE4CD00CC81DC /* Publisher.playground */,
 				CEC25EAE272BE3DF00CC81DC /* Operators.playground */,
+				CE40A741272FBFCF005D54EC /* Subscriber.playground */,
 			);
 			path = HelloCombine;
 			sourceTree = "<group>";
