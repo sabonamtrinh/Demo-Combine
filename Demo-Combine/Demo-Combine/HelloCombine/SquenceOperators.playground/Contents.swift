@@ -47,6 +47,7 @@ publisher
 // last & last(where:) : Tuong tu, nhung khi nao phat di completion moi di tim kiem phan tu cuoi cung
 
 // output(at:)
+
 let pub3 = ["A", "B", "C", "D", "E"].publisher
 
 pub3
@@ -74,6 +75,7 @@ pub3
     .store(in: &subscriptions)
 
 // contains
+
 pub3
     .print("publisher")
     .contains("F")
@@ -83,6 +85,7 @@ pub3
 // contains(where:)
 
 // allStisfy : true khi tat cả gia tri thoa man
+
 pub3
     .allSatisfy({ $0.count == 1 })
     .sink(receiveValue: { print($0) })

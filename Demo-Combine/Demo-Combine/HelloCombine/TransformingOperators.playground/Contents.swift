@@ -30,9 +30,9 @@ formatter.numberStyle = .spellOut
 
 // MARK: Map key paths
 
-//map<T>(_:)
-//map<T0, T1>(_:, _:)
-//map<T0, T1, T2>(_:, _:, _:)
+//      map<T>(_:)
+//      map<T0, T1>(_:, _:)
+//      map<T0, T1, T2>(_:, _:, _:)
 
 struct Student {
     var name: String
@@ -80,14 +80,14 @@ chat
     .flatMap { $0.message }
     .sink(receiveValue: { print($0) })
     .store(in: &subscription)
-
-chat.send(nam)
-nam.message.value = "Nam: Cau an com chua :))"
-
-
-chat.send(nu)
-nu.message.value = "Chua"
-
+//
+//chat.send(nam)
+//nam.message.value = "Nam: Cau an com chua :))"
+//
+//
+//chat.send(nu)
+//nu.message.value = "Chua"
+//
 // MARK: Replacing upstream output
 
 // replacingNil(with:)

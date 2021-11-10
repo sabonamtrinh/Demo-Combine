@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEBA6581273AC52500CCC4A8 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA6580273AC52400CCC4A8 /* API.swift */; };
+		CEBA6584273AC7FC00CCC4A8 /* SimpleCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA6583273AC7FC00CCC4A8 /* SimpleCoin.swift */; };
+		CEBA6586273AC98600CCC4A8 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEBA6585273AC98600CCC4A8 /* Keys.plist */; };
+		CEBA658A273ACE2A00CCC4A8 /* SimpleCoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA6588273ACE2A00CCC4A8 /* SimpleCoinTableViewCell.swift */; };
+		CEBA658B273ACE2A00CCC4A8 /* SimpleCoinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEBA6589273ACE2A00CCC4A8 /* SimpleCoinTableViewCell.xib */; };
+		CEBA658E273AD04E00CCC4A8 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA658D273AD04E00CCC4A8 /* ImageCache.swift */; };
+		CEBA6590273AD06F00CCC4A8 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA658F273AD06F00CCC4A8 /* UIImageView+.swift */; };
+		CEBA6593273AD11D00CCC4A8 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA6592273AD11D00CCC4A8 /* UIViewController+.swift */; };
+		CEBA6595273AD4AB00CCC4A8 /* UISearchBar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA6594273AD4AB00CCC4A8 /* UISearchBar+.swift */; };
+		CEBA6597273AD60F00CCC4A8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA6596273AD60F00CCC4A8 /* ViewModel.swift */; };
 		CEC25E98272BD85600CC81DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC25E97272BD85600CC81DC /* AppDelegate.swift */; };
 		CEC25E9A272BD85600CC81DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC25E99272BD85600CC81DC /* SceneDelegate.swift */; };
 		CEC25E9C272BD85600CC81DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC25E9B272BD85600CC81DC /* ViewController.swift */; };
@@ -21,6 +31,16 @@
 		CE86915C2734F27D00DAFA5A /* CombiningOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CombiningOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CE888E99273832CB00612C50 /* TimeManipulationOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TimeManipulationOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CEB0F97B2738CD64008774B5 /* SquenceOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SquenceOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		CEBA6580273AC52400CCC4A8 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		CEBA6583273AC7FC00CCC4A8 /* SimpleCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCoin.swift; sourceTree = "<group>"; };
+		CEBA6585273AC98600CCC4A8 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
+		CEBA6588273ACE2A00CCC4A8 /* SimpleCoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCoinTableViewCell.swift; sourceTree = "<group>"; };
+		CEBA6589273ACE2A00CCC4A8 /* SimpleCoinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleCoinTableViewCell.xib; sourceTree = "<group>"; };
+		CEBA658D273AD04E00CCC4A8 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		CEBA658F273AD06F00CCC4A8 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		CEBA6592273AD11D00CCC4A8 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		CEBA6594273AD4AB00CCC4A8 /* UISearchBar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+.swift"; sourceTree = "<group>"; };
+		CEBA6596273AD60F00CCC4A8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		CEC25E94272BD85600CC81DC /* Demo-Combine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo-Combine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC25E97272BD85600CC81DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC25E99272BD85600CC81DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,9 +65,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE9CB731273B6E9F00183394 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA6580273AC52400CCC4A8 /* API.swift */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		CE9CB732273B6EEB00183394 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CEC25E99272BD85600CC81DC /* SceneDelegate.swift */,
+				CEC25E97272BD85600CC81DC /* AppDelegate.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		CEBA6582273AC7C600CCC4A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA6583273AC7FC00CCC4A8 /* SimpleCoin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEBA6587273ACE0C00CCC4A8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA6588273ACE2A00CCC4A8 /* SimpleCoinTableViewCell.swift */,
+				CEBA6589273ACE2A00CCC4A8 /* SimpleCoinTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CEBA658C273AD03000CCC4A8 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA658D273AD04E00CCC4A8 /* ImageCache.swift */,
+				CEBA658F273AD06F00CCC4A8 /* UIImageView+.swift */,
+				CEBA6592273AD11D00CCC4A8 /* UIViewController+.swift */,
+				CEBA6594273AD4AB00CCC4A8 /* UISearchBar+.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		CEBA6591273AD0E900CCC4A8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CEBA6587273ACE0C00CCC4A8 /* Cell */,
+				CEC25E9B272BD85600CC81DC /* ViewController.swift */,
+				CEBA6596273AD60F00CCC4A8 /* ViewModel.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		CEC25E8B272BD85600CC81DC = {
 			isa = PBXGroup;
 			children = (
+				CEBA6585273AC98600CCC4A8 /* Keys.plist */,
 				CEC25E96272BD85600CC81DC /* Demo-Combine */,
 				CEC25E95272BD85600CC81DC /* Products */,
 			);
@@ -64,10 +140,12 @@
 		CEC25E96272BD85600CC81DC /* Demo-Combine */ = {
 			isa = PBXGroup;
 			children = (
+				CE9CB732273B6EEB00183394 /* Resource */,
+				CEBA658C273AD03000CCC4A8 /* Extentions */,
 				CEC25EAB272BD97A00CC81DC /* HelloCombine */,
-				CEC25E97272BD85600CC81DC /* AppDelegate.swift */,
-				CEC25E99272BD85600CC81DC /* SceneDelegate.swift */,
-				CEC25E9B272BD85600CC81DC /* ViewController.swift */,
+				CE9CB731273B6E9F00183394 /* Platform */,
+				CEBA6582273AC7C600CCC4A8 /* Model */,
+				CEBA6591273AD0E900CCC4A8 /* Scenes */,
 				CEC25E9D272BD85600CC81DC /* Main.storyboard */,
 				CEC25EA0272BD85A00CC81DC /* Assets.xcassets */,
 				CEC25EA2272BD85A00CC81DC /* LaunchScreen.storyboard */,
@@ -148,7 +226,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBA6586273AC98600CCC4A8 /* Keys.plist in Resources */,
 				CEC25EA4272BD85A00CC81DC /* LaunchScreen.storyboard in Resources */,
+				CEBA658B273ACE2A00CCC4A8 /* SimpleCoinTableViewCell.xib in Resources */,
 				CEC25EA1272BD85A00CC81DC /* Assets.xcassets in Resources */,
 				CEC25E9F272BD85600CC81DC /* Main.storyboard in Resources */,
 			);
@@ -162,8 +242,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEC25E9C272BD85600CC81DC /* ViewController.swift in Sources */,
+				CEBA6595273AD4AB00CCC4A8 /* UISearchBar+.swift in Sources */,
 				CEC25E98272BD85600CC81DC /* AppDelegate.swift in Sources */,
+				CEBA6597273AD60F00CCC4A8 /* ViewModel.swift in Sources */,
+				CEBA658A273ACE2A00CCC4A8 /* SimpleCoinTableViewCell.swift in Sources */,
+				CEBA6581273AC52500CCC4A8 /* API.swift in Sources */,
+				CEBA6590273AD06F00CCC4A8 /* UIImageView+.swift in Sources */,
+				CEBA6593273AD11D00CCC4A8 /* UIViewController+.swift in Sources */,
 				CEC25E9A272BD85600CC81DC /* SceneDelegate.swift in Sources */,
+				CEBA658E273AD04E00CCC4A8 /* ImageCache.swift in Sources */,
+				CEBA6584273AC7FC00CCC4A8 /* SimpleCoin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

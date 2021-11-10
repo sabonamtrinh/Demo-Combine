@@ -87,7 +87,6 @@ chars
 
 numbers
     .drop(while: {
-        print("X")
         return $0 % 5 != 0
     })
     .sink(receiveValue: { print($0) })

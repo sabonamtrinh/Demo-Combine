@@ -3,6 +3,15 @@ import Combine
 
 // A protocol that declares a type that can receive input from a publisher.
 
+public protocol Subscriber {
+    associatedtype Input
+    associatedtype Failure : Error
+    
+    func receive(subscription: Subscription)
+    func receive(_ input: Self.Input) -> Subscribers.Demand
+    func receive(completion: Subscribers.Completion<Self.Failure>)
+}
+
 // MARK: Assign
 
 class Dog {
@@ -144,7 +153,7 @@ let student = Student(name: "Nam")
 print("Student name is \(student.name)")
 
 let publisher6 = PassthroughSubject<String, Never>()
-publisher6.subscribe(student)
+publisher6.subscribe(subscriber)
 
 publisher6.send("Tung")
 print("Student name is \(student.name)")

@@ -6,54 +6,55 @@ import Combine
 // prepend(Output) : Cung cap truoc cac gia tri cho 1 publisher
 
 var subscriptions = Set<AnyCancellable>()
-let publisher = [3, 4].publisher
-
-publisher
-    .prepend(1, 2)
-    .prepend(0)
-    .sink(receiveValue: { print($0) })
-    .store(in: &subscriptions)
-
-// prepend(Squence): tuong tu nhung them array hoac set
-
-publisher
-    .prepend([1, 2])
-    .prepend(Set(-1...0))
-    .prepend(stride(from: 6, to: 11, by: 2))
-    .sink(receiveValue: { print($0) })
-    .store(in: &subscriptions)
-
-// prepen(publisher)
-
-let publisher1 = [3, 4].publisher
-let publisher2 = PassthroughSubject<Int, Never>()
-
-publisher1
-    .prepend(publisher2)
-    .sink(receiveValue: { print($0) })
-    .store(in: &subscriptions)
-
-publisher2.send(-1)
-publisher2.send(0)
-publisher2.send(completion: .finished)
-
-
-// MARK: Appending : Ngược lại với prepend
-print("===========================")
-// append(Output)
-
-publisher
-    .append(5, 6)
-    .append(7)
-    .sink(receiveValue: { print($0) })
-    .store(in: &subscriptions)
-
-// append(Sequence)
-
-publisher1
-    .append(publisher2)
-    .sink(receiveValue: { print($0) })
-    .store(in: &subscriptions)
+//
+//let publisher = [3, 4].publisher
+//
+//publisher
+//    .prepend(1, 2)
+//    .prepend(0)
+//    .sink(receiveValue: { print($0) })
+//    .store(in: &subscriptions)
+//
+//// prepend(Squence): tuong tu nhung them array hoac set
+//
+//publisher
+//    .prepend([1, 2])
+//    .prepend(Set(-1...0))
+//    .prepend(stride(from: 6, to: 11, by: 2))
+//    .sink(receiveValue: { print($0) })
+//    .store(in: &subscriptions)
+//
+//// prepen(publisher)
+//
+//let publisher1 = [3, 4].publisher
+//let publisher2 = PassthroughSubject<Int, Never>()
+//
+//publisher1
+//    .prepend(publisher2)
+//    .sink(receiveValue: { print($0) })
+//    .store(in: &subscriptions)
+//
+//publisher2.send(-1)
+//publisher2.send(0)
+//publisher2.send(completion: .finished)
+//
+//
+//// MARK: Appending : Ngược lại với prepend
+//print("===========================")
+//// append(Output)
+//
+//publisher
+//    .append(5, 6)
+//    .append(7)
+//    .sink(receiveValue: { print($0) })
+//    .store(in: &subscriptions)
+//
+//// append(Sequence)
+//
+//publisher1
+//    .append(publisher2)
+//    .sink(receiveValue: { print($0) })
+//    .store(in: &subscriptions)
 
 
 // MARK: Advanced combining
@@ -64,7 +65,6 @@ print("==========================")
 
 let pub1 = PassthroughSubject<Int, Never>()
 let pub2 = PassthroughSubject<Int, Never>()
-let pub3 = PassthroughSubject<Int, Never>()
 
 let publishers = PassthroughSubject<PassthroughSubject<Int, Never>, Never>()
 
@@ -86,13 +86,7 @@ pub1.send(3)
 pub2.send(4)
 pub2.send(5)
 
-publishers.send(pub3)
-pub2.send(6)
-pub2.send(7)
-pub3.send(8)
-pub3.send(9)
-
-pub3.send(completion: .finished)
+pub2.send(completion: .finished)
 publishers.send(completion: .finished)
 
 print("=======================")

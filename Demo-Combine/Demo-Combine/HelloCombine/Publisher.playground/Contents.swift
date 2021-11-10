@@ -1,9 +1,20 @@
 import UIKit
 import Combine
 
+public protocol Publisher {
+
+    associatedtype Output
+    associatedtype Failure : Error
+
+    func receive<S>(subscriber: S) where S : Subscriber, Self.Failure == S.Failure, Self.Output == S.Input
+}
+
+
 // MARK: Publisher từ giá trị
 
 let helloPublisher = "Hello World!".publisher
+
+
 let _ = helloPublisher
     .sink { print($0) }
 
@@ -40,7 +51,7 @@ Publishers.Sequence<[Int], Never>(sequence: [1, 2, 3, 4])
 class Student {
     @Published var name: String
     @Published var age: Int
-    
+
     init(name: String, age: Int) {
         self.name = name
         self.age = age
@@ -87,14 +98,14 @@ func futureIncrement(integer: Int,
 
 DispatchQueue.main.async {
     let future = futureIncrement(integer: 1, afterDelay: 3)
-    
+
     future.sink(receiveCompletion: {
         print($0)
     }, receiveValue: {
         print($0)
     })
     .store(in: &subscriptions)
-    
+
     future.sink(receiveCompletion: {
         print("Second", $0)
     },receiveValue: { print("Second", $0) })
@@ -159,3 +170,5 @@ publisher.sink { value in
 .store(in: &subscriptions2)
 
 subject.send(0)
+
+
