@@ -14,9 +14,6 @@ final class ViewController: UIViewController {
     @IBOutlet private weak var searchBar: UISearchBar!
     
     private var coins = [SimpleCoin]()
-   // private let repository = RepositoryAPI()
-    private let refreshControl = UIRefreshControl()
-    private var isLoading = false
     private var viewModel = ViewModel()
     private var subscriptions = Set<AnyCancellable>()
     
