@@ -15,7 +15,7 @@ final class SimpleCoinTableViewCell: UITableViewCell, ReusableView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        selectionStyle = .none
     }
     
     func configureCell(coin: SimpleCoin) {
