@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEBA6581273AC52500CCC4A8 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA6580273AC52400CCC4A8 /* API.swift */; };
+		CEBA6581273AC52500CCC4A8 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA6580273AC52400CCC4A8 /* APIService.swift */; };
 		CEBA6584273AC7FC00CCC4A8 /* SimpleCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA6583273AC7FC00CCC4A8 /* SimpleCoin.swift */; };
 		CEBA6586273AC98600CCC4A8 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEBA6585273AC98600CCC4A8 /* Keys.plist */; };
 		CEBA658A273ACE2A00CCC4A8 /* SimpleCoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA6588273ACE2A00CCC4A8 /* SimpleCoinTableViewCell.swift */; };
@@ -31,7 +31,7 @@
 		CE86915C2734F27D00DAFA5A /* CombiningOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CombiningOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CE888E99273832CB00612C50 /* TimeManipulationOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TimeManipulationOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CEB0F97B2738CD64008774B5 /* SquenceOperators.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SquenceOperators.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		CEBA6580273AC52400CCC4A8 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		CEBA6580273AC52400CCC4A8 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		CEBA6583273AC7FC00CCC4A8 /* SimpleCoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCoin.swift; sourceTree = "<group>"; };
 		CEBA6585273AC98600CCC4A8 /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		CEBA6588273ACE2A00CCC4A8 /* SimpleCoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCoinTableViewCell.swift; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		CE9CB731273B6E9F00183394 /* Platform */ = {
 			isa = PBXGroup;
 			children = (
-				CEBA6580273AC52400CCC4A8 /* API.swift */,
+				CEBA6580273AC52400CCC4A8 /* APIService.swift */,
 			);
 			path = Platform;
 			sourceTree = "<group>";
@@ -246,7 +246,7 @@
 				CEC25E98272BD85600CC81DC /* AppDelegate.swift in Sources */,
 				CEBA6597273AD60F00CCC4A8 /* ViewModel.swift in Sources */,
 				CEBA658A273ACE2A00CCC4A8 /* SimpleCoinTableViewCell.swift in Sources */,
-				CEBA6581273AC52500CCC4A8 /* API.swift in Sources */,
+				CEBA6581273AC52500CCC4A8 /* APIService.swift in Sources */,
 				CEBA6590273AD06F00CCC4A8 /* UIImageView+.swift in Sources */,
 				CEBA6593273AD11D00CCC4A8 /* UIViewController+.swift in Sources */,
 				CEC25E9A272BD85600CC81DC /* SceneDelegate.swift in Sources */,
