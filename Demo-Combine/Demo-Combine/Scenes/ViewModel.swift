@@ -30,7 +30,6 @@ class ViewModel {
         case initial
         case fetched
         case error(message: String)
-        case reloadCell(indexPath: IndexPath)
     }
     
     enum Action {
@@ -46,8 +45,6 @@ class ViewModel {
             isLoading = true
         case .error(message: let message):
             print("Error: ", message)
-        case .reloadCell(let indexPath):
-            print("Reload Cell at", indexPath)
         }
     }
     
